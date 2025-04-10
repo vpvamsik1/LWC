@@ -1,7 +1,16 @@
-// import minus, { PI, add } from "./utils.js";
-import * as UTILS from './utils.js'
+// function firstFunction() {
+//     console.log("hooray")
+// }
 
-console.log(UTILS.PI);
-console.log(UTILS.add(2,3));
+// let btn = document.querySelector("button");
+// btn.addEventListener("click", firstFunction);
 
-console.log(UTILS.minus(10, 7));
+document.addEventListener("mousemove", handler);
+
+function handler() {
+    document.querySelector(".demo").innerHTML = Math.random();
+}
+
+function removeHandler() {
+    document.removeEventListener("mousemove", handler);
+}
